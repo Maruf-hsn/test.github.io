@@ -1,0 +1,512 @@
+/*===================================
+    common
+====================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    transition: all .3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.clr {
+    clear: both;
+}
+
+input {
+    border-style: none;
+    background: transparent;
+}
+
+/*===================================
+    Local common
+====================================*/
+
+font-family: 'Roboto Condensed',
+sans-serif;
+.p_relative {
+    position: relative;
+}
+
+.p_absoulate {
+    position: absolute;
+}
+
+.full_wr {
+    width: 100%;
+    height: auto;
+    background-color: ;
+}
+
+.main_wr {
+    width: 67%;
+    margin: 0 auto;
+
+    height: auto;
+    background-color: ;
+}
+
+.empty_row_100vh {
+    width: 100%;
+    height: 100vh;
+}
+
+.empty_row_50px {
+    width: 100%;
+    height: 50px;
+}
+
+.doted_border {
+    border: 1px dotted red;
+    width: 100%;
+    height: 1px;
+}
+
+/*===================================
+    nav bar
+====================================*/
+
+.bg_agro_nav {
+    background-color: #0C141D;
+    position: fixed;
+    z-index: 999999;
+}
+
+.agro_nav {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 0;
+    position: ;
+
+    height: auto;
+    background-color: ;
+}
+
+.agro_logo {
+    width: 20%;
+    box-sizing: border-box;
+
+    height: auto;
+    background-color: ;
+}
+
+.agro_menu {
+    width: 80%;
+    box-sizing: border-box;
+    text-align: right;
+
+    background-color: ;
+}
+
+.agro_menu ul li {
+    display: inline-block;
+}
+
+.agro_menu ul {
+    background-color: #0C141D;
+}
+
+.agro_menu ul li a {
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-size: 21px;
+    color: white;
+    display: block;
+
+    background-color: ;
+}
+
+/*===============
+    dropdown menu
+=================*/
+
+.agro_menu ul li ul li {
+    display: block;
+}
+
+.agro_menu ul li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.agro_menu ul li > ul {
+    display: none;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    padding-top: 2px;
+}
+
+.agro_menu ul li:hover > ul {
+    display: block;
+}
+
+/*===============
+    Sub dropdown 
+=================*/
+
+.agro_menu li ul ul {
+    top: 0;
+    left: 100%;
+    padding-left: 2px;
+}
+
+/*===============
+    hover effect 
+=================*/
+
+.agro_menu a:before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: "";
+    margin-left: 17px;
+    border-bottom: 3px solid #fff;
+    width: 0%;
+    transition: all .3s linear;
+}
+
+.agro_menu a:hover:before {
+    width: 70%;
+}
+
+/*.agro_menu li li:before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: "";
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    transition: all .3s linear;
+}
+.agro_menu li li:hover:before {
+    width: 100%;
+}*/
+
+/*===========================================================
+            banner
+=============================================================*/
+
+.full_banner {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/home_agro_slider.jpg) no-repeat left top fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999999;
+}
+
+/*.main_banner {
+    position: relative;
+}
+.banner_logo_content {
+    position: absolute;
+    top: 40%;
+    left:  0%;
+} */
+
+.banner_logo_content {
+    padding-top: 14%;
+}
+
+.banner_logo {
+    width: 20%;
+}
+
+.banner_content {
+    width: 80%;
+}
+.banner_logo  img {
+    width: 300px; 
+}
+
+
+/*===========================================================
+            content row one
+=============================================================*/
+
+.full_c_r_1 {
+    background-color: #fff;
+}
+
+.c_r_1_left {
+    width: 47%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+
+.c_r_1_right {
+    width: 47%;
+}
+
+.c_r_1_left > p {
+    color: red;
+    font-size: 20px;
+}
+
+.c_r_1_left_1 {
+    width: 48%;
+    padding-right: 2%;
+    box-sizing: border-box;
+}
+
+.c_r_1_left_2 {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* ==========
+    image hover
+===========*/
+
+/*===========================================================
+            content row two
+=============================================================*/
+
+.full_c_r_2 {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.c_r_2_row_one {
+    text-align: center;
+    color: #032C27;
+    font-size: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.c_r_2_row_two {
+    width: 100%;
+    height: auto;
+
+    background-color: ;
+}
+
+.c_r_2_row_two_colume {
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    z-index: 0;
+
+    margin-right: 1%;
+    background-color: ;
+}
+
+.c_r_2_row_two_colume img {
+    transition: all 1s;
+    /* why not working ????????????????*/
+}
+
+.c_r_2_row_two_colume a:hover img {
+    width: 120%;
+}
+
+.c_r_2_row_two_colume h2 {
+    color: #ff4141;
+    padding-bottom: 20px;
+}
+
+.c_r_2_row_two_colume p {
+    padding-bottom: 40px;
+}
+
+.c_r_2_row_two_colume i {
+    color: #ff4141;
+    padding-right: 5px;
+}
+
+.c_r_2_row_two_colume a { 
+    border: 5px solid white;
+    border-radius: 62px;
+    padding: 10px 30px;
+    background-color: #0c141d;
+    color: #fcfcfc;
+    font-size: 20px;
+    transition: all .7s ease;
+}
+.c_r_2_row_two_colume a:hover {
+    background-color: #408686; 
+    border: 5px solid black;
+} 
+/*===========================================================
+            content row three
+=============================================================*/
+
+.full_c_r_3 {
+    background-color:  rgba(53, 53, 57, 0.74);
+    color: white;
+}
+
+.c_r_3_colume {
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+
+    background-color: ;
+}
+
+.c_r_3_colume h1 {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.c_r_3_colume p {
+    padding-bottom: 40px;
+}
+
+.c_r_3_icon_cont {
+    width: 100%;
+    height: auto;
+}
+.c_r_3_cont a {
+    color: white;
+    font-size: 18px;
+}
+.c_r_3_cont a:hover {
+    color: gray; 
+}
+.c_r_3_group {
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    padding-right: 15px;
+}
+
+.c_r_3_icon {
+    width: 20%;
+    height: auto;
+    font-size: 48px;
+    color: red;
+}
+
+.c_r_3_cont {
+    width: 80%;
+    height: auto;
+}
+
+.c_r_3_cont h3 {
+    padding-bottom: 10px;
+}
+
+/*===========================================================
+            content row four
+=============================================================*/
+
+.full_c_r_4 {
+    background: url(../img/home_agro_section_bg1.jpg) no-repeat left top fixed;
+    background-size: cover;
+    color: white;
+}
+
+.c_r_4_header {
+    text-align: center;
+}
+
+.c_r_4_header h1 {
+    padding-bottom: 40px;
+}
+
+.c_r_4_ol {
+    width: 100%;
+}
+
+.c_r_4_ol ol {
+    list-style-type: decimal;
+    font-size: 25px;
+    line-height: 20px;
+}
+
+.c_r_4_ol li {
+    margin: 15px 0;
+}
+
+.c_r_4_ol ol a {
+    color: white;
+}
+
+.c_r_4_ol li li {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 10px;
+}
+
+.c_r_4_ol li {
+    position: relative;
+}
+
+.c_r_4_ol li li {
+    display: none;
+}
+
+.c_r_4_ol li:hover li {
+    display: block;
+}
+
+/*===========================================================
+            footer
+=============================================================*/
+
+.full_agro_footer {
+    background-color: rgba(21, 23, 25, 0.81);
+}
+
+.footer_col {
+    width: 25%;
+    box-sizing: border-box;
+    margin-left: 0px;
+    color: white;
+
+    background-color: ;
+}
+
+.footer_col h2 {
+    margin-left: 60px;
+}
+
+.footer_col ul {
+    list-style-type: disc;
+    padding: 20px 0 0 30px;
+    margin-left: 60px;
+}
+
+.footer_col li {
+    margin-bottom: 10px;
+}
+
+.footer_col li a {
+    color: white;
+
+}
+
+.footer_col li a:hover {
+    font-size: 20px;
+}
